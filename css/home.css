@@ -1,0 +1,619 @@
+body {
+    background-color: #F2F4F7;
+}
+
+.sec1home {
+    width: 100%;
+    height: 50px;
+}
+/* navbar */
+.sec1home .homeheader {
+    width: 100%;
+    height: 55px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+}
+
+.homeheaderleft {
+    display: flex;
+    align-items: center;
+}
+
+.homeheaderleft .fa-facebook {
+    color: #0866FF;
+    font-size: 40px;
+}
+
+.homesearch {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.homesearch input {
+    width: 250px;
+    height: 40px;
+    background-color: #F0F2F5;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 22px;
+    z-index: 0;
+}
+
+.homeheadercenter {
+    width: 30%;
+    display: flex;
+    margin-left: 250px;
+}
+
+.homeheadercenter .fa-house-window {
+    color: #0866FF;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.homeheadercenter .fa-user-group {
+    margin-left: 50%;
+    margin-top: 5px;
+    color: #535658;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.homeheaderend {
+    width: 25%;
+    display: flex;
+    margin-left: 300px;
+}
+
+.homeheaderend #find {
+    width: 100px;
+
+    border-radius: 30px;
+    border: none;
+    background-color: #EDEFF2;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.homeheaderend #find:hover {
+    background-color: #D6D9DD;
+}
+
+.homeheaderend .fa-facebook-messenger {
+    font-size: 25px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: #EDEFF2;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.homeheaderend .fa-facebook-messenger:hover {
+    background-color: #D6D9DD;
+}
+
+.homeheaderend .fa-bell {
+    font-size: 25px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #EDEFF2;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.homeheaderend .fa-bell:hover {
+    background-color: #D6D9DD;
+}
+.notif-box {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.notif-box p {
+  margin: 0;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.homeheaderend .fa-gear {
+    font-size: 25px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #EDEFF2;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.homeheaderend .fa-gear:hover {
+    background-color: #D6D9DD;
+}
+
+.homeheaderend .fa-user {
+    font-size: 25px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #EDEFF2;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.homeheaderend .fa-user:hover {
+    background-color: #D6D9DD;
+}
+
+.sec2home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+/* sidebar */
+.listleftthome {
+    width: 20%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow-y: auto;
+    margin-right: 80px;
+}
+.sidebaritem span{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.listleftthome .fa-circle-user {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.listleftthome .fa-circle-user:hover {
+    font-size: 40px;
+}
+
+.listleftthome .fa-user-group {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.listleftthome .fa-user-group:hover {
+    font-size: 40px;
+}
+
+.listleftthome .fa-clock-rotate-left {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.listleftthome .fa-clock-rotate-left:hover {
+    font-size: 40px;
+}
+
+.listleftthome .fa-bookmark {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.listleftthome .fa-bookmark:hover {
+    font-size: 40px;
+}
+
+.listleftthome .fa-users-medical {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.listleftthome .fa-users-medical:hover {
+    font-size: 40px;
+}
+
+.listleftthome .fa-store {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.listleftthome .fa-store:hover {
+    font-size: 40px;
+}
+
+.listleftthome .fa-calendar-star {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.listleftthome .fa-calendar-star:hover {
+    font-size: 40px;
+}
+.listleftthome .fa-file-chart-column{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.listleftthome .fa-file-chart-column:hover{
+    font-size: 40px;
+}
+.fa-gift{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-gift:hover{
+    font-size: 40px;
+}
+.fa-hand-holding-seedling{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-hand-holding-seedling:hover{
+    font-size: 40px;
+}
+.fa-crosshairs-simple{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-crosshairs-simple:hover{
+    font-size: 40px;
+}
+.fa-circle-heart{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-circle-heart:hover{
+    font-size: 40px;
+}
+.fa-credit-card-front{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-credit-card-front:hover{
+    font-size: 40px;
+}
+.fa-gamepad{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-gamepad:hover{
+    font-size: 40px;
+}
+/* home content */
+.homecontent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postcell {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #D6D9DD;
+    padding: 20px;
+}
+
+#postInput {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+.postcell button {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0866FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fa-camera-movie{
+    font-size: 30px;
+    margin-left: 80px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-camera-movie:hover{
+    font-size: 40px;
+}
+.fa-images{
+     font-size: 30px;
+    margin-left: 80px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-images:hover{
+    font-size: 40px;
+}
+.fa-face-laugh{
+     font-size: 30px;
+    margin-left: 80px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-face-laugh:hover{
+    font-size: 40px;
+}
+.fa-location-crosshairs{
+     font-size: 30px;
+    margin-left: 80px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.fa-location-crosshairs:hover{
+    font-size: 40px;
+}
+#postsContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.post-bg {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #D6D9DD;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post-bg p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.comments .comment {
+    display: flex;
+    justify-self: end;
+    justify-content: space-around;
+    background-color: #f2f3f5;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.comments p{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+.comments .comment img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content:end;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+.single-post {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.post-actions button {
+    border: none;
+    background-color: #FFFFFF;
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-actions button:hover {
+    color: #0b7bff;
+}
+
+@media (max-width: 575px) {
+  .homeheadercenter,
+  .homeheaderend {
+    display: none;
+  }
+
+  .homesearch input {
+    width: 150px;
+  }
+
+  .listleftthome {
+    display: none;
+  }
+
+  .homecontent {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .postcell button
+  {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
+   .fa-camera-movie,
+  .fa-images,
+  .fa-face-laugh,
+  .fa-location-crosshairs{
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .homeheadercenter {
+    display: none;
+  }
+
+  .homeheaderend {
+    margin-left: 0;
+  }
+  .fa-facebook-messenger,.fa-bell
+  .fa-gear,.fa-user,#find{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  .homesearch input {
+    width: 180px;
+  }
+
+  .listleftthome {
+    width: 25%;
+    margin-right: 0;
+  }
+
+  .homecontent {
+    width: 75%;
+  }
+  .postcell{
+    position: relative;
+  }
+   .fa-camera-movie,
+  .fa-images,
+  .fa-face-laugh,
+  .fa-location-crosshairs{
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .homeheadercenter {
+    margin-left: 50px;
+  }
+
+  .homeheaderend {
+    margin-left: 100px;
+  }
+
+  .homesearch input {
+    width: 200px;
+  }
+
+  .listleftthome {
+    width: 25%;
+    margin-right: 0;
+  }
+
+  .homecontent {
+    width: 75%;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .homeheadercenter {
+    margin-left: 150px;
+  }
+
+  .homeheaderend {
+    margin-left: 200px;
+  }
+
+  .homesearch input {
+    width: 250px;
+  }
+
+  .listleftthome {
+    width: 20%;
+  }
+
+  .homecontent {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homeheadercenter {
+    margin-left: 250px;
+  }
+
+  .homeheaderend {
+    margin-left: 300px;
+  }
+
+  .homesearch input {
+    width: 250px;
+  }
+
+  .listleftthome {
+    width: 20%;
+  }
+
+  .homecontent {
+    width: 50%;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+</head>
+
+<body>
+  <div class="home">
+    <!-- nav bar -->
+    <div class="sec1home">
+      <!-- header -->
+      <div class="homeheader">
+        <!-- facebook logo and search bar -->
+        <!-- facebook logo -->
+        <div class="homeheaderleft">
+          <a href="./index.html"> <i class="fa-brands fa-facebook"></i> </a>
+          <!-- searchbar -->
+          <div class="homesearch">
+            <input type="text" placeholder="Search Facebook" />
+          </div>
+          <!-- center icons -->
+          <div class="homeheadercenter">
+            <a href="./home.html">
+              <i class="fa-solid fa-house-window"></i>
+            </a>
+            <a href="./friends.html"><i class="fa-light fa-user-group"></i></a>
+          </div>
+          <!-- right icons -->
+          <div class="homeheaderend">
+            <button id="find">Find friends</button>
+            <a href="./messages.html"><i class="fab fa-facebook-messenger"></i></a>
+            <div class="notif-wrapper" style="position: relative;">
+              <i class="fa-solid fa-bell" onclick="toggleNotifBox()"></i>
+              <div id="notifBox" class="notif-box" style="display: none;"></div>
+            </div>
+
+            <a href="./sitting.html"><i class="fa-solid fa-gear"></i></a>
+            <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main home -->
+    <div class="sec2home">
+      <!-- list left -->
+
+      <div class="listleftthome">
+        <div class="sidebaritem">
+          <a href="./profile.html"><i class="fa-solid fa-circle-user" style="color: #0866FF;"></i> </a>
+          <span>Profile</span>
+        </div>
+        <div class="sidebaritem">
+          <a href="./friends.html"><i class="fa-regular fa-user-group" style="color: #0866FF"></i></a>
+          <span>Friends</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-clock-rotate-left" style="color: #0866FF"></i>
+          <span>Memories</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-bookmark" style="color: #0866FF"></i>
+          <span>Saved</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-users-medical" style="color: #0866FF"></i>
+          <span>Groups</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-store" style="color: #0866FF"></i>
+          <span>Marketplace</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-calendar-star" style="color: #0866FF"></i>
+          <span>Events</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-file-chart-column" style="color: #0866FF;"></i>
+          <span>Ads Manager</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-gift" style="color: #0866FF;"></i>
+          <span>Gifts</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-hand-holding-seedling" style="color: #0866FF;"></i>
+          <span>Climate scince</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-crosshairs-simple" style="color: #0866FF;"></i>
+          <span>Crisis response</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-circle-heart" style="color: #0866FF;"></i>
+          <span>Fundraisers</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-credit-card-front" style="color: #0866FF;"></i>
+          <span>Payments</span>
+        </div>
+        <div class="sidebaritem">
+          <i class="fa-solid fa-gamepad" style="color: #0866FF;"></i>
+          <span>Play games</span>
+        </div>
+      </div>
+      <!-- home content -->
+      <div class="homecontent">
+        <!-- post cell -->
+        <div class="postcell">
+          <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+          <button onclick="createPost()">Post</button>
+          <i class="fa-solid fa-camera-movie" style="color: #E42645;"></i>
+          <i class="fa-solid fa-images" style="color: #41B35D;"></i>
+          <i class="fa-solid fa-face-laugh" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-location-crosshairs" style="color: #74C0FC;"></i>
+        </div>
+        <!-- posts -->
+        <div id="postsContainer"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+
+</html>
